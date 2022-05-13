@@ -9,12 +9,13 @@ import Foundation
 
 struct PriceListResponse: Codable {
     var prices: [[Double]] = []
-    var marketCaps: [[Double]] = []
-    var volumes: [[Double]] = []
     
-    enum CodingKeys: String, CodingKey {
-        case prices
-        case marketCaps = "market_caps"
-        case volumes = "total_volumes"
+    var pricesAsTouple: [(x: Double, y: Double)] {
+        var data: [(x: Double, y: Double)] = []
+        prices.forEach {
+            let item: (x: Double, y: Double) = (x: $0.first ?? 0.00, y: $0.last ?? 0.00)
+            data.append(item)
+        }
+        return data
     }
 }
