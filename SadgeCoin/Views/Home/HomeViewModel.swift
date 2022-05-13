@@ -50,7 +50,7 @@ class HomeViewModel: NSObject {
         guard !currentlyFiltering else { return }
         currentlyFiltering = true
         filteredList = searchKey.isEmpty ? coinList : coinList.filter({
-            $0.searchTerm.contains(searchKey)
+            $0.searchTerm.contains(searchKey.lowercased())
         })
         currentlyFiltering = false
     }

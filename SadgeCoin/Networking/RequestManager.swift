@@ -19,7 +19,7 @@ class RequestManager {
         var value: String {
             switch self {
             case .coinList:
-                return "/coins/list?include_platform=false"
+                return "/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h"
             case .coinDetails(let id):
                 return "coins/" + id +  "/market_chart?vs_currency=usd&days=1&interval=hourly"
             }
