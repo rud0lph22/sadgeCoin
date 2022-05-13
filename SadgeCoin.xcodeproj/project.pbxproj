@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DD59529A282E88A50007E33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD595299282E88A50007E33A /* AppDelegate.swift */; };
 		DD59529C282E88A50007E33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59529B282E88A50007E33A /* SceneDelegate.swift */; };
-		DD59529E282E88A50007E33A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59529D282E88A50007E33A /* ViewController.swift */; };
 		DD5952A1282E88A50007E33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD59529F282E88A50007E33A /* Main.storyboard */; };
 		DD5952A3282E88A50007E33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5952A2282E88A50007E33A /* Assets.xcassets */; };
 		DD5952A6282E88A50007E33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5952A4282E88A50007E33A /* LaunchScreen.storyboard */; };
@@ -21,8 +20,9 @@
 		DD5952D2282E89C40007E33A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952D1282E89C40007E33A /* HomeViewModel.swift */; };
 		DD5952D4282E89CC0007E33A /* ConViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952D3282E89CC0007E33A /* ConViewModel.swift */; };
 		DD5952D6282E89DB0007E33A /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952D5282E89DB0007E33A /* Coin.swift */; };
-		DD5952D8282E89E10007E33A /* CoinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952D7282E89E10007E33A /* CoinResponse.swift */; };
+		DD5952D8282E89E10007E33A /* CoinListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952D7282E89E10007E33A /* CoinListResponse.swift */; };
 		DD5952DA282E89F10007E33A /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952D9282E89F10007E33A /* RequestManager.swift */; };
+		DD5952DC282E948D0007E33A /* PriceListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952DB282E948D0007E33A /* PriceListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		DD595296282E88A50007E33A /* SadgeCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadgeCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD595299282E88A50007E33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD59529B282E88A50007E33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD59529D282E88A50007E33A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD5952A0282E88A50007E33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD5952A2282E88A50007E33A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD5952A5282E88A50007E33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,8 +60,9 @@
 		DD5952D1282E89C40007E33A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DD5952D3282E89CC0007E33A /* ConViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConViewModel.swift; sourceTree = "<group>"; };
 		DD5952D5282E89DB0007E33A /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
-		DD5952D7282E89E10007E33A /* CoinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinResponse.swift; sourceTree = "<group>"; };
+		DD5952D7282E89E10007E33A /* CoinListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListResponse.swift; sourceTree = "<group>"; };
 		DD5952D9282E89F10007E33A /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		DD5952DB282E948D0007E33A /* PriceListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,6 @@
 				DD5952CB282E89180007E33A /* Entities */,
 				DD5952CC282E891F0007E33A /* Networking */,
 				DD59529B282E88A50007E33A /* SceneDelegate.swift */,
-				DD59529D282E88A50007E33A /* ViewController.swift */,
 				DD59529F282E88A50007E33A /* Main.storyboard */,
 				DD5952A2282E88A50007E33A /* Assets.xcassets */,
 				DD5952A4282E88A50007E33A /* LaunchScreen.storyboard */,
@@ -167,7 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				DD5952D5282E89DB0007E33A /* Coin.swift */,
-				DD5952D7282E89E10007E33A /* CoinResponse.swift */,
+				DD5952D7282E89E10007E33A /* CoinListResponse.swift */,
+				DD5952DB282E948D0007E33A /* PriceListResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -311,14 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD59529E282E88A50007E33A /* ViewController.swift in Sources */,
 				DD5952D2282E89C40007E33A /* HomeViewModel.swift in Sources */,
 				DD59529A282E88A50007E33A /* AppDelegate.swift in Sources */,
 				DD5952D4282E89CC0007E33A /* ConViewModel.swift in Sources */,
 				DD59529C282E88A50007E33A /* SceneDelegate.swift in Sources */,
 				DD5952DA282E89F10007E33A /* RequestManager.swift in Sources */,
 				DD5952CE282E89720007E33A /* HomeViewController.swift in Sources */,
-				DD5952D8282E89E10007E33A /* CoinResponse.swift in Sources */,
+				DD5952D8282E89E10007E33A /* CoinListResponse.swift in Sources */,
+				DD5952DC282E948D0007E33A /* PriceListResponse.swift in Sources */,
 				DD5952D6282E89DB0007E33A /* Coin.swift in Sources */,
 				DD5952D0282E89790007E33A /* CoinViewController.swift in Sources */,
 			);

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class Coin: Codable {
+    var id: String? = "test1234"
+    var symbol: String? = "RCV"
+    var name: String? = "RodoCoin"
+    var pricesArray: [[Double]] = []
+}
