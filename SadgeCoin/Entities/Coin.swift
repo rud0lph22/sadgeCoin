@@ -44,3 +44,9 @@ extension Coin: CoinSimpleCellModel {
         price ?? 0
     }
 }
+
+protocol Favoritable {
+    func addTo(coin: Coin)
+    
+    func remove(coin: Coin)
+}

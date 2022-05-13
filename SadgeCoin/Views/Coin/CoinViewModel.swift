@@ -24,7 +24,7 @@ class CoinViewModel: NSObject {
     var viewTitle: String { coin?.symbolLabelText ?? "" }
     var viewSubtitle: String { coin?.nameLabelText ?? "" }
     var viewDescription: String {
-        "(" + String(format: "%.2f", coin?.change ?? 0.00) + "%)" + String(format: "%.2f", coin?.currentPrice ?? 0.00)
+        "(" + String(format: "%.2f", coin?.change ?? 0.00) + "%)" + String(coin?.currentPrice ?? 0.00)
     }
     var priceLabelColor: UIColor {
         !(coin?.isUp ?? false) ? .red : .green

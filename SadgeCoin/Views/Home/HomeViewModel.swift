@@ -19,6 +19,8 @@ class HomeViewModel: NSObject {
         }
     }
     
+    private var favoriteList: [Coin] = []
+    
     private var reloadSubject: PassthroughSubject<Void, Never> = PassthroughSubject<Void, Never>()
     private var currentlyFiltering: Bool = false
     
@@ -49,9 +51,15 @@ class HomeViewModel: NSObject {
     func filter(with searchKey: String) {
         guard !currentlyFiltering else { return }
         currentlyFiltering = true
-        filteredList = searchKey.isEmpty ? coinList : coinList.filter({
-            $0.searchTerm.contains(searchKey.lowercased())
-        })
+        
+        if searchKey.lowercased().contains("fav") {
+            filteredList = favoriteList
+        } else {
+            filteredList = searchKey.isEmpty ? coinList : coinList.filter({
+                $0.searchTerm.contains(searchKey.lowercased())
+            })
+        }
+
         currentlyFiltering = false
     }
     
@@ -71,8 +79,32 @@ extension HomeViewModel: UITableViewDataSource {
         if let currentCell = cell as? CoinSimpleCell {
             let coin: CoinSimpleCellModel = filteredList[indexPath.row]
             currentCell.configure(with: coin)
+            if !currentCell.imBiengListeningTo {
+                currentCell.buttonWasTappedPublisher.sink { [weak self] in
+                    guard let selectedCoin  = coin as? Coin else { return }
+                    self?.addTo(coin: selectedCoin)
+                }.store(in: &bag)
+            }
         }
         
         return cell
+    }
+}
+
+extension HomeViewModel: Favoritable {
+    func addTo(coin: Coin) {
+        // lo que sea para guardarlo donde sea
+        favoriteList.append(coin)
+    }
+    
+    func remove(coin: Coin) {
+        let index: Int?
+        index = favoriteList.firstIndex {
+            $0.id == coin.id
+        }
+        
+        if let itemIndex = index {
+            favoriteList.remove(at: itemIndex)
+        }
     }
 }

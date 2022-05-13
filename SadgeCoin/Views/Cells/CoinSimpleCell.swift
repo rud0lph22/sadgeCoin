@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 protocol CoinSimpleCellModel {
     var symbolLabelText: String { get }
@@ -18,6 +19,19 @@ class CoinSimpleCell: UITableViewCell {
     private var symbolLabel: UILabel = UILabel()
     private var nameLabel: UILabel = UILabel()
     private var priceLabel: UILabel = UILabel()
+    private var favButton: UIButton = UIButton(type: .system)
+    private var buttonWasTappedSubject: PassthroughSubject<Void, Never> = PassthroughSubject<Void, Never>()
+    
+    var buttonWasTappedPublisher: AnyPublisher<Void, Never> {
+        imBiengListeningTo = true
+        return buttonWasTappedSubject.eraseToAnyPublisher()
+    }
+
+    var imBiengListeningTo: Bool = false
+    
+    @objc func buttonWasTapped() {
+        buttonWasTappedSubject.send(())
+    }
     
     func configure(with model: CoinSimpleCellModel) {
         configureSymbol()
@@ -49,23 +63,24 @@ class CoinSimpleCell: UITableViewCell {
         NSLayoutConstraint.activate([
             nameLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8),
             nameLabel.topAnchor.constraint(equalTo: self.symbolLabel.bottomAnchor, constant: 4),
-            nameLabel.rightAnchor.constraint(equalTo: self.priceLabel.leftAnchor, constant: 4),
+            nameLabel.rightAnchor.constraint(equalTo: self.favButton.leftAnchor, constant: 4),
             nameLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 4)
         ])
     }
     
     private func configurePrice() {
-        priceLabel.removeFromSuperview()
-        priceLabel.translatesAutoresizingMaskIntoConstraints = false
-        priceLabel.textAlignment = .right
-        self.addSubview(priceLabel)
+        favButton.removeFromSuperview()
+        favButton.translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.addSubview(favButton)
         
         NSLayoutConstraint.activate([
-            priceLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8),
-            priceLabel.widthAnchor.constraint(equalToConstant: 100),
-            priceLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 4),
-            priceLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 4)
+            favButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8),
+            favButton.widthAnchor.constraint(equalToConstant: 100),
+            favButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 4),
+            favButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 4)
         ])
+        favButton.setTitle("agregar", for: .normal)
+        favButton.addTarget(self, action: #selector(buttonWasTapped), for: .touchUpInside)
     }
     
     private func setStyle(withModel model: CoinSimpleCellModel) {
