@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0684CFE28ED5FC70D12F9D2E /* Pods_SadgeCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4563FED52CABA2DC5AC262C /* Pods_SadgeCoin.framework */; };
+		1D5F778E5AC13A744B04C5B8 /* Pods_SadgeCoin_SadgeCoinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBAD21C9160113DF44030EB /* Pods_SadgeCoin_SadgeCoinUITests.framework */; };
+		34AC72D554888C68782EDDE0 /* Pods_SadgeCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8EBA728B70CDE0AF9BB40B /* Pods_SadgeCoinTests.framework */; };
 		DD59529A282E88A50007E33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD595299282E88A50007E33A /* AppDelegate.swift */; };
 		DD59529C282E88A50007E33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59529B282E88A50007E33A /* SceneDelegate.swift */; };
 		DD5952A1282E88A50007E33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD59529F282E88A50007E33A /* Main.storyboard */; };
@@ -46,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1067D186BE2F6F6ED9EE91A4 /* Pods-SadgeCoin-SadgeCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SadgeCoin-SadgeCoinUITests.release.xcconfig"; path = "Target Support Files/Pods-SadgeCoin-SadgeCoinUITests/Pods-SadgeCoin-SadgeCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
+		50EF379380B8AE0027296590 /* Pods-SadgeCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SadgeCoin.debug.xcconfig"; path = "Target Support Files/Pods-SadgeCoin/Pods-SadgeCoin.debug.xcconfig"; sourceTree = "<group>"; };
+		6ECACEF9B6FEC440DE0D04E0 /* Pods-SadgeCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SadgeCoin.release.xcconfig"; path = "Target Support Files/Pods-SadgeCoin/Pods-SadgeCoin.release.xcconfig"; sourceTree = "<group>"; };
+		7971B55400A716D8ABDA3D7E /* Pods-SadgeCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SadgeCoinTests.debug.xcconfig"; path = "Target Support Files/Pods-SadgeCoinTests/Pods-SadgeCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B8EBA728B70CDE0AF9BB40B /* Pods_SadgeCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SadgeCoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F6905724669A981835E957 /* Pods-SadgeCoin-SadgeCoinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SadgeCoin-SadgeCoinUITests.debug.xcconfig"; path = "Target Support Files/Pods-SadgeCoin-SadgeCoinUITests/Pods-SadgeCoin-SadgeCoinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCBAD21C9160113DF44030EB /* Pods_SadgeCoin_SadgeCoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SadgeCoin_SadgeCoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD595296282E88A50007E33A /* SadgeCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadgeCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD595299282E88A50007E33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD59529B282E88A50007E33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +79,8 @@
 		DD5952DE282EA8830007E33A /* KUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUIViewController.swift; sourceTree = "<group>"; };
 		DD5952E4282EAFEE0007E33A /* CoinSimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSimpleCell.swift; sourceTree = "<group>"; };
 		DD5952E6282EB20D0007E33A /* UITableViewCell+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+extension.swift"; sourceTree = "<group>"; };
+		E4563FED52CABA2DC5AC262C /* Pods_SadgeCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SadgeCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6622565B88F3B9801BF7D6 /* Pods-SadgeCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SadgeCoinTests.release.xcconfig"; path = "Target Support Files/Pods-SadgeCoinTests/Pods-SadgeCoinTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0684CFE28ED5FC70D12F9D2E /* Pods_SadgeCoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AC72D554888C68782EDDE0 /* Pods_SadgeCoinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +104,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5F778E5AC13A744B04C5B8 /* Pods_SadgeCoin_SadgeCoinUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66C85E3C78211172973210EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50EF379380B8AE0027296590 /* Pods-SadgeCoin.debug.xcconfig */,
+				6ECACEF9B6FEC440DE0D04E0 /* Pods-SadgeCoin.release.xcconfig */,
+				92F6905724669A981835E957 /* Pods-SadgeCoin-SadgeCoinUITests.debug.xcconfig */,
+				1067D186BE2F6F6ED9EE91A4 /* Pods-SadgeCoin-SadgeCoinUITests.release.xcconfig */,
+				7971B55400A716D8ABDA3D7E /* Pods-SadgeCoinTests.debug.xcconfig */,
+				EB6622565B88F3B9801BF7D6 /* Pods-SadgeCoinTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A122F8A7F6A5148277A1F44E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4563FED52CABA2DC5AC262C /* Pods_SadgeCoin.framework */,
+				CCBAD21C9160113DF44030EB /* Pods_SadgeCoin_SadgeCoinUITests.framework */,
+				7B8EBA728B70CDE0AF9BB40B /* Pods_SadgeCoinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD59528D282E88A40007E33A = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +142,8 @@
 				DD5952AF282E88A50007E33A /* SadgeCoinTests */,
 				DD5952B9282E88A50007E33A /* SadgeCoinUITests */,
 				DD595297282E88A50007E33A /* Products */,
+				66C85E3C78211172973210EB /* Pods */,
+				A122F8A7F6A5148277A1F44E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD5952C0282E88A50007E33A /* Build configuration list for PBXNativeTarget "SadgeCoin" */;
 			buildPhases = (
+				598247B47E5DF00E03ED5A9E /* [CP] Check Pods Manifest.lock */,
 				DD595292282E88A40007E33A /* Sources */,
 				DD595293282E88A40007E33A /* Frameworks */,
 				DD595294282E88A40007E33A /* Resources */,
+				C91A6B4C5FFA47EC6C8D0BCF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD5952C3282E88A50007E33A /* Build configuration list for PBXNativeTarget "SadgeCoinTests" */;
 			buildPhases = (
+				159AD09423E8DB0A8762F9E5 /* [CP] Check Pods Manifest.lock */,
 				DD5952A8282E88A50007E33A /* Sources */,
 				DD5952A9282E88A50007E33A /* Frameworks */,
 				DD5952AA282E88A50007E33A /* Resources */,
@@ -255,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD5952C6282E88A50007E33A /* Build configuration list for PBXNativeTarget "SadgeCoinUITests" */;
 			buildPhases = (
+				C0BBC593866E9BD450CA779E /* [CP] Check Pods Manifest.lock */,
 				DD5952B2282E88A50007E33A /* Sources */,
 				DD5952B3282E88A50007E33A /* Frameworks */,
 				DD5952B4282E88A50007E33A /* Resources */,
+				24FBF6299B9DC9CFEF4BB1D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,6 +384,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		159AD09423E8DB0A8762F9E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SadgeCoinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24FBF6299B9DC9CFEF4BB1D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SadgeCoin-SadgeCoinUITests/Pods-SadgeCoin-SadgeCoinUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SadgeCoin-SadgeCoinUITests/Pods-SadgeCoin-SadgeCoinUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SadgeCoin-SadgeCoinUITests/Pods-SadgeCoin-SadgeCoinUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		598247B47E5DF00E03ED5A9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SadgeCoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0BBC593866E9BD450CA779E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SadgeCoin-SadgeCoinUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C91A6B4C5FFA47EC6C8D0BCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SadgeCoin/Pods-SadgeCoin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SadgeCoin/Pods-SadgeCoin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SadgeCoin/Pods-SadgeCoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD595292282E88A40007E33A /* Sources */ = {
@@ -530,6 +679,7 @@
 		};
 		DD5952C1282E88A50007E33A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50EF379380B8AE0027296590 /* Pods-SadgeCoin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -558,6 +708,7 @@
 		};
 		DD5952C2282E88A50007E33A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ECACEF9B6FEC440DE0D04E0 /* Pods-SadgeCoin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -586,6 +737,7 @@
 		};
 		DD5952C4282E88A50007E33A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7971B55400A716D8ABDA3D7E /* Pods-SadgeCoinTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -606,6 +758,7 @@
 		};
 		DD5952C5282E88A50007E33A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6622565B88F3B9801BF7D6 /* Pods-SadgeCoinTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -626,6 +779,7 @@
 		};
 		DD5952C7282E88A50007E33A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F6905724669A981835E957 /* Pods-SadgeCoin-SadgeCoinUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -644,6 +798,7 @@
 		};
 		DD5952C8282E88A50007E33A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1067D186BE2F6F6ED9EE91A4 /* Pods-SadgeCoin-SadgeCoinUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
