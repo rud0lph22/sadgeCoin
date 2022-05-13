@@ -24,6 +24,7 @@
 		DD5952DA282E89F10007E33A /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952D9282E89F10007E33A /* RequestManager.swift */; };
 		DD5952DC282E948D0007E33A /* PriceListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952DB282E948D0007E33A /* PriceListResponse.swift */; };
 		DD5952DF282EA8830007E33A /* KUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952DE282EA8830007E33A /* KUIViewController.swift */; };
+		DD5952E5282EAFEE0007E33A /* CoinSimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952E4282EAFEE0007E33A /* CoinSimpleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		DD5952D9282E89F10007E33A /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		DD5952DB282E948D0007E33A /* PriceListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListResponse.swift; sourceTree = "<group>"; };
 		DD5952DE282EA8830007E33A /* KUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUIViewController.swift; sourceTree = "<group>"; };
+		DD5952E4282EAFEE0007E33A /* CoinSimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSimpleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,10 +195,19 @@
 		DD5952E0282EAF9B0007E33A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD5952E3282EAFDB0007E33A /* Cells */,
 				DD5952C9282E88F00007E33A /* Home */,
 				DD5952CA282E88FB0007E33A /* Coin */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DD5952E3282EAFDB0007E33A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD5952E4282EAFEE0007E33A /* CoinSimpleCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +343,7 @@
 			files = (
 				DD5952DF282EA8830007E33A /* KUIViewController.swift in Sources */,
 				DD5952D2282E89C40007E33A /* HomeViewModel.swift in Sources */,
+				DD5952E5282EAFEE0007E33A /* CoinSimpleCell.swift in Sources */,
 				DD59529A282E88A50007E33A /* AppDelegate.swift in Sources */,
 				DD5952D4282E89CC0007E33A /* ConViewModel.swift in Sources */,
 				DD59529C282E88A50007E33A /* SceneDelegate.swift in Sources */,
