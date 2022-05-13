@@ -23,6 +23,7 @@
 		DD5952D8282E89E10007E33A /* CoinListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952D7282E89E10007E33A /* CoinListResponse.swift */; };
 		DD5952DA282E89F10007E33A /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952D9282E89F10007E33A /* RequestManager.swift */; };
 		DD5952DC282E948D0007E33A /* PriceListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952DB282E948D0007E33A /* PriceListResponse.swift */; };
+		DD5952DF282EA8830007E33A /* KUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952DE282EA8830007E33A /* KUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DD5952D7282E89E10007E33A /* CoinListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListResponse.swift; sourceTree = "<group>"; };
 		DD5952D9282E89F10007E33A /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		DD5952DB282E948D0007E33A /* PriceListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListResponse.swift; sourceTree = "<group>"; };
+		DD5952DE282EA8830007E33A /* KUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				DD5952CA282E88FB0007E33A /* Coin */,
 				DD5952CB282E89180007E33A /* Entities */,
 				DD5952CC282E891F0007E33A /* Networking */,
+				DD5952DD282EA86E0007E33A /* Utils */,
 				DD59529B282E88A50007E33A /* SceneDelegate.swift */,
 				DD59529F282E88A50007E33A /* Main.storyboard */,
 				DD5952A2282E88A50007E33A /* Assets.xcassets */,
@@ -178,6 +181,14 @@
 				DD5952D9282E89F10007E33A /* RequestManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		DD5952DD282EA86E0007E33A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD5952DE282EA8830007E33A /* KUIViewController.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5952DF282EA8830007E33A /* KUIViewController.swift in Sources */,
 				DD5952D2282E89C40007E33A /* HomeViewModel.swift in Sources */,
 				DD59529A282E88A50007E33A /* AppDelegate.swift in Sources */,
 				DD5952D4282E89CC0007E33A /* ConViewModel.swift in Sources */,

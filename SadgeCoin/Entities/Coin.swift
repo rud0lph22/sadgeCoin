@@ -12,4 +12,8 @@ class Coin: Codable {
     var symbol: String? = "RCV"
     var name: String? = "RodoCoin"
     var pricesArray: [[Double]] = []
+    
+    var searchTerm: String {
+        (id ?? "") + (symbol ?? "") + (name ?? "")
+    }
 }
