@@ -61,6 +61,7 @@ class CoinViewController: UIViewController {
             self.subtitleLabel.text =  self.model.viewSubtitle
             self.priceLabel.text = self.model.viewDescription
             self.chart.add(self.model.chartSiries)
+            self.priceLabel.textColor = self.model.priceLabelColor
         }
     }
     
@@ -94,11 +95,14 @@ class CoinViewController: UIViewController {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(titleLabel)
         
+        titleLabel.font = UIFont.systemFont(ofSize: 36, weight: .bold)
+        titleLabel.textColor = .darkGray
+        
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 40),
             titleLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 8),
             titleLabel.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -100),
-            titleLabel.heightAnchor.constraint(equalToConstant: 90)
+            titleLabel.heightAnchor.constraint(equalToConstant: 70)
         ])
     }
     
@@ -107,11 +111,14 @@ class CoinViewController: UIViewController {
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(subtitleLabel)
         
+        subtitleLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        subtitleLabel.textColor = .gray
+        
         NSLayoutConstraint.activate([
             subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4),
             subtitleLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 8),
             subtitleLabel.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -100),
-            subtitleLabel.heightAnchor.constraint(equalToConstant: 50)
+            subtitleLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
     
@@ -124,7 +131,7 @@ class CoinViewController: UIViewController {
             priceLabel.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: 4),
             priceLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 8),
             priceLabel.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -100),
-            priceLabel.heightAnchor.constraint(equalToConstant: 30)
+            priceLabel.heightAnchor.constraint(equalToConstant: 20)
         ])
     }
     
@@ -134,10 +141,10 @@ class CoinViewController: UIViewController {
         self.view.addSubview(chart)
         
         NSLayoutConstraint.activate([
-            chart.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 8),
+            chart.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 16),
             chart.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 8),
             chart.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -8),
-            chart.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -8)
+            chart.heightAnchor.constraint(equalTo: chart.widthAnchor)
         ])
     }
 }
