@@ -35,7 +35,7 @@ class CoinSimpleCell: UITableViewCell {
         
         NSLayoutConstraint.activate([
             symbolLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8),
-            symbolLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 4),
+            symbolLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
             symbolLabel.heightAnchor.constraint(equalToConstant: 16),
             symbolLabel.widthAnchor.constraint(equalToConstant: 90)
         ])
@@ -48,7 +48,7 @@ class CoinSimpleCell: UITableViewCell {
         
         NSLayoutConstraint.activate([
             nameLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8),
-            nameLabel.topAnchor.constraint(equalTo: self.symbolLabel.bottomAnchor, constant: 8),
+            nameLabel.topAnchor.constraint(equalTo: self.symbolLabel.bottomAnchor, constant: 4),
             nameLabel.rightAnchor.constraint(equalTo: self.priceLabel.leftAnchor, constant: 4),
             nameLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 4)
         ])
@@ -57,10 +57,11 @@ class CoinSimpleCell: UITableViewCell {
     private func configurePrice() {
         priceLabel.removeFromSuperview()
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
+        priceLabel.textAlignment = .right
         self.addSubview(priceLabel)
         
         NSLayoutConstraint.activate([
-            priceLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 4),
+            priceLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8),
             priceLabel.widthAnchor.constraint(equalToConstant: 100),
             priceLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 4),
             priceLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 4)
