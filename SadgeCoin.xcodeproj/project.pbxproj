@@ -116,8 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DD595299282E88A50007E33A /* AppDelegate.swift */,
-				DD5952C9282E88F00007E33A /* Home */,
-				DD5952CA282E88FB0007E33A /* Coin */,
+				DD5952E0282EAF9B0007E33A /* Views */,
 				DD5952CB282E89180007E33A /* Entities */,
 				DD5952CC282E891F0007E33A /* Networking */,
 				DD5952DD282EA86E0007E33A /* Utils */,
@@ -189,6 +188,15 @@
 				DD5952DE282EA8830007E33A /* KUIViewController.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DD5952E0282EAF9B0007E33A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD5952C9282E88F00007E33A /* Home */,
+				DD5952CA282E88FB0007E33A /* Coin */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

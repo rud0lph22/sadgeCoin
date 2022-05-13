@@ -7,23 +7,25 @@
 
 import Foundation
 import Combine
+import UIKit
 
-class HomeViewModel {
+class HomeViewModel: NSObject {
     
     private var bag: Set<AnyCancellable> = Set<AnyCancellable>()
     private var coinList: [Coin] = []
     private var filteredList: [Coin] = [] {
         didSet {
-            coinSubject.send(filteredList)
+            reloadSubject.send(())
         }
     }
     
-    private var coinSubject: PassthroughSubject<[Coin], Never> = PassthroughSubject<[Coin], Never>()
-    private var coinPublisher: AnyPublisher<[Coin], Never> {
-        return coinSubject.eraseToAnyPublisher()
+    private var reloadSubject: PassthroughSubject<Void, Never> = PassthroughSubject<Void, Never>()
+    
+    var reloadPublisher: AnyPublisher<Void, Never> {
+        reloadSubject.eraseToAnyPublisher()
     }
     
-    func loadList() -> AnyPublisher<[Coin], Never> {
+    func loadList() {
         RequestManager.shared
             .getCoinList()
             .sink { [weak self] completion in
@@ -41,13 +43,21 @@ class HomeViewModel {
                 self?.filteredList = coins
             }
             .store(in: &bag)
-        
-        return coinPublisher
     }
     
     func filter(with searchKey: String) {
         filteredList = coinList.filter({
             $0.searchTerm.contains(searchKey)
         })
+    }
+}
+
+extension HomeViewModel: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        filteredList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }
