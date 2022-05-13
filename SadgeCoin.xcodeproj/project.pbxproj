@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD59529A282E88A50007E33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD595299282E88A50007E33A /* AppDelegate.swift */; };
+		DD59529C282E88A50007E33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59529B282E88A50007E33A /* SceneDelegate.swift */; };
+		DD59529E282E88A50007E33A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59529D282E88A50007E33A /* ViewController.swift */; };
+		DD5952A1282E88A50007E33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD59529F282E88A50007E33A /* Main.storyboard */; };
+		DD5952A3282E88A50007E33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5952A2282E88A50007E33A /* Assets.xcassets */; };
+		DD5952A6282E88A50007E33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5952A4282E88A50007E33A /* LaunchScreen.storyboard */; };
+		DD5952B1282E88A50007E33A /* SadgeCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952B0282E88A50007E33A /* SadgeCoinTests.swift */; };
+		DD5952BB282E88A50007E33A /* SadgeCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952BA282E88A50007E33A /* SadgeCoinUITests.swift */; };
+		DD5952BD282E88A50007E33A /* SadgeCoinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952BC282E88A50007E33A /* SadgeCoinUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD5952AD282E88A50007E33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD59528E282E88A40007E33A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD595295282E88A40007E33A;
+			remoteInfo = SadgeCoin;
+		};
+		DD5952B7282E88A50007E33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD59528E282E88A40007E33A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD595295282E88A40007E33A;
+			remoteInfo = SadgeCoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD595296282E88A50007E33A /* SadgeCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadgeCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD595299282E88A50007E33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD59529B282E88A50007E33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD59529D282E88A50007E33A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD5952A0282E88A50007E33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD5952A2282E88A50007E33A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD5952A5282E88A50007E33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD5952A7282E88A50007E33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5952AC282E88A50007E33A /* SadgeCoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadgeCoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5952B0282E88A50007E33A /* SadgeCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadgeCoinTests.swift; sourceTree = "<group>"; };
+		DD5952B6282E88A50007E33A /* SadgeCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadgeCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5952BA282E88A50007E33A /* SadgeCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadgeCoinUITests.swift; sourceTree = "<group>"; };
+		DD5952BC282E88A50007E33A /* SadgeCoinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadgeCoinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD595293282E88A40007E33A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5952A9282E88A50007E33A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5952B3282E88A50007E33A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD59528D282E88A40007E33A = {
+			isa = PBXGroup;
+			children = (
+				DD595298282E88A50007E33A /* SadgeCoin */,
+				DD5952AF282E88A50007E33A /* SadgeCoinTests */,
+				DD5952B9282E88A50007E33A /* SadgeCoinUITests */,
+				DD595297282E88A50007E33A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD595297282E88A50007E33A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD595296282E88A50007E33A /* SadgeCoin.app */,
+				DD5952AC282E88A50007E33A /* SadgeCoinTests.xctest */,
+				DD5952B6282E88A50007E33A /* SadgeCoinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD595298282E88A50007E33A /* SadgeCoin */ = {
+			isa = PBXGroup;
+			children = (
+				DD595299282E88A50007E33A /* AppDelegate.swift */,
+				DD59529B282E88A50007E33A /* SceneDelegate.swift */,
+				DD59529D282E88A50007E33A /* ViewController.swift */,
+				DD59529F282E88A50007E33A /* Main.storyboard */,
+				DD5952A2282E88A50007E33A /* Assets.xcassets */,
+				DD5952A4282E88A50007E33A /* LaunchScreen.storyboard */,
+				DD5952A7282E88A50007E33A /* Info.plist */,
+			);
+			path = SadgeCoin;
+			sourceTree = "<group>";
+		};
+		DD5952AF282E88A50007E33A /* SadgeCoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD5952B0282E88A50007E33A /* SadgeCoinTests.swift */,
+			);
+			path = SadgeCoinTests;
+			sourceTree = "<group>";
+		};
+		DD5952B9282E88A50007E33A /* SadgeCoinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD5952BA282E88A50007E33A /* SadgeCoinUITests.swift */,
+				DD5952BC282E88A50007E33A /* SadgeCoinUITestsLaunchTests.swift */,
+			);
+			path = SadgeCoinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD595295282E88A40007E33A /* SadgeCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD5952C0282E88A50007E33A /* Build configuration list for PBXNativeTarget "SadgeCoin" */;
+			buildPhases = (
+				DD595292282E88A40007E33A /* Sources */,
+				DD595293282E88A40007E33A /* Frameworks */,
+				DD595294282E88A40007E33A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SadgeCoin;
+			productName = SadgeCoin;
+			productReference = DD595296282E88A50007E33A /* SadgeCoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD5952AB282E88A50007E33A /* SadgeCoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD5952C3282E88A50007E33A /* Build configuration list for PBXNativeTarget "SadgeCoinTests" */;
+			buildPhases = (
+				DD5952A8282E88A50007E33A /* Sources */,
+				DD5952A9282E88A50007E33A /* Frameworks */,
+				DD5952AA282E88A50007E33A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD5952AE282E88A50007E33A /* PBXTargetDependency */,
+			);
+			name = SadgeCoinTests;
+			productName = SadgeCoinTests;
+			productReference = DD5952AC282E88A50007E33A /* SadgeCoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD5952B5282E88A50007E33A /* SadgeCoinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD5952C6282E88A50007E33A /* Build configuration list for PBXNativeTarget "SadgeCoinUITests" */;
+			buildPhases = (
+				DD5952B2282E88A50007E33A /* Sources */,
+				DD5952B3282E88A50007E33A /* Frameworks */,
+				DD5952B4282E88A50007E33A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD5952B8282E88A50007E33A /* PBXTargetDependency */,
+			);
+			name = SadgeCoinUITests;
+			productName = SadgeCoinUITests;
+			productReference = DD5952B6282E88A50007E33A /* SadgeCoinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD59528E282E88A40007E33A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					DD595295282E88A40007E33A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					DD5952AB282E88A50007E33A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = DD595295282E88A40007E33A;
+					};
+					DD5952B5282E88A50007E33A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = DD595295282E88A40007E33A;
+					};
+				};
+			};
+			buildConfigurationList = DD595291282E88A40007E33A /* Build configuration list for PBXProject "SadgeCoin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD59528D282E88A40007E33A;
+			productRefGroup = DD595297282E88A50007E33A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD595295282E88A40007E33A /* SadgeCoin */,
+				DD5952AB282E88A50007E33A /* SadgeCoinTests */,
+				DD5952B5282E88A50007E33A /* SadgeCoinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD595294282E88A40007E33A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5952A6282E88A50007E33A /* LaunchScreen.storyboard in Resources */,
+				DD5952A3282E88A50007E33A /* Assets.xcassets in Resources */,
+				DD5952A1282E88A50007E33A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5952AA282E88A50007E33A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5952B4282E88A50007E33A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD595292282E88A40007E33A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD59529E282E88A50007E33A /* ViewController.swift in Sources */,
+				DD59529A282E88A50007E33A /* AppDelegate.swift in Sources */,
+				DD59529C282E88A50007E33A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5952A8282E88A50007E33A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5952B1282E88A50007E33A /* SadgeCoinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5952B2282E88A50007E33A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5952BD282E88A50007E33A /* SadgeCoinUITestsLaunchTests.swift in Sources */,
+				DD5952BB282E88A50007E33A /* SadgeCoinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD5952AE282E88A50007E33A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD595295282E88A40007E33A /* SadgeCoin */;
+			targetProxy = DD5952AD282E88A50007E33A /* PBXContainerItemProxy */;
+		};
+		DD5952B8282E88A50007E33A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD595295282E88A40007E33A /* SadgeCoin */;
+			targetProxy = DD5952B7282E88A50007E33A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD59529F282E88A50007E33A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5952A0282E88A50007E33A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD5952A4282E88A50007E33A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5952A5282E88A50007E33A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD5952BE282E88A50007E33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD5952BF282E88A50007E33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD5952C1282E88A50007E33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G38NNHTK29;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SadgeCoin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.SadgeCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD5952C2282E88A50007E33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G38NNHTK29;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SadgeCoin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.SadgeCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD5952C4282E88A50007E33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G38NNHTK29;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.SadgeCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SadgeCoin.app/SadgeCoin";
+			};
+			name = Debug;
+		};
+		DD5952C5282E88A50007E33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G38NNHTK29;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.SadgeCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SadgeCoin.app/SadgeCoin";
+			};
+			name = Release;
+		};
+		DD5952C7282E88A50007E33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G38NNHTK29;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.SadgeCoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SadgeCoin;
+			};
+			name = Debug;
+		};
+		DD5952C8282E88A50007E33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G38NNHTK29;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.SadgeCoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SadgeCoin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD595291282E88A40007E33A /* Build configuration list for PBXProject "SadgeCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5952BE282E88A50007E33A /* Debug */,
+				DD5952BF282E88A50007E33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD5952C0282E88A50007E33A /* Build configuration list for PBXNativeTarget "SadgeCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5952C1282E88A50007E33A /* Debug */,
+				DD5952C2282E88A50007E33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD5952C3282E88A50007E33A /* Build configuration list for PBXNativeTarget "SadgeCoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5952C4282E88A50007E33A /* Debug */,
+				DD5952C5282E88A50007E33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD5952C6282E88A50007E33A /* Build configuration list for PBXNativeTarget "SadgeCoinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5952C7282E88A50007E33A /* Debug */,
+				DD5952C8282E88A50007E33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD59528E282E88A40007E33A /* Project object */;
+}
