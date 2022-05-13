@@ -8,12 +8,21 @@
 import Foundation
 
 class Coin: Codable {
-    var id: String? = "test1234"
-    var symbol: String? = "RCV"
-    var name: String? = "RodoCoin"
-    var pricesArray: [[Double]] = []
+    var id: String?
+    var symbol: String?
+    var name: String?
     
     var searchTerm: String {
         (id ?? "") + (symbol ?? "") + (name ?? "")
+    }
+}
+
+extension Coin: CoinSimpleCellModel {
+    var symbolLabelText: String {
+        symbol ?? "RCV"
+    }
+    
+    var nameLabelText: String {
+        name ?? "RodoCoin"
     }
 }

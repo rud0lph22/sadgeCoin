@@ -17,8 +17,4 @@ struct PriceListResponse: Codable {
         case marketCaps = "market_caps"
         case volumes = "total_volumes"
     }
-    
-    func updatePrices(for coin: Coin) {
-        coin.pricesArray = prices
-    }
 }

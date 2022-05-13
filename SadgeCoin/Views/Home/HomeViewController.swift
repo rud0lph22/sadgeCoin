@@ -15,25 +15,29 @@ class HomeViewController: KUIViewController {
     private var searchBar: UISearchBar? = UISearchBar()
     private var model: HomeViewModel = HomeViewModel()
     
-    private var items: [Any] = [] {
-        didSet {
-            collectionView?.reloadData()
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
         bind()
         model.loadList()
+        registerCell()
     }
     
     private func bind() {
         model.reloadPublisher
-            .sink { [weak self] _ in
-                self?.collectionView?.reloadData()
+            .sink {
+                DispatchQueue.main.async { [weak self] in
+                    self?.collectionView?.reloadData()
+                }
             }
             .store(in: &bag)
+        searchBar?.delegate = self
+        collectionView?.delegate = self
+        collectionView?.dataSource = model
+    }
+    
+    private func registerCell() {
+        collectionView?.register(CoinSimpleCell.self, forCellReuseIdentifier: CoinSimpleCell.reuseIdentifier)
     }
     
     private func configureUI() {
@@ -73,4 +77,10 @@ class HomeViewController: KUIViewController {
 
 extension HomeViewController: UITableViewDelegate {
     
+}
+
+extension HomeViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        model.filter(with: searchText)
+    }
 }

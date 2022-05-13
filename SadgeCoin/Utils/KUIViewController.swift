@@ -45,6 +45,7 @@ class KUIViewController: UIViewController {
     private func configureContainer() {
         container.removeFromSuperview()
         container = UIView()
+        self.view.addSubview(container)
         container.translatesAutoresizingMaskIntoConstraints = false
         bottomConstraintForKeyboard = container.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
         guard let bottomConstraintForKeyboard = bottomConstraintForKeyboard else {

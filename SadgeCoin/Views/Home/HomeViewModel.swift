@@ -20,6 +20,7 @@ class HomeViewModel: NSObject {
     }
     
     private var reloadSubject: PassthroughSubject<Void, Never> = PassthroughSubject<Void, Never>()
+    private var currentlyFiltering: Bool = false
     
     var reloadPublisher: AnyPublisher<Void, Never> {
         reloadSubject.eraseToAnyPublisher()
@@ -46,9 +47,12 @@ class HomeViewModel: NSObject {
     }
     
     func filter(with searchKey: String) {
-        filteredList = coinList.filter({
+        guard !currentlyFiltering else { return }
+        currentlyFiltering = true
+        filteredList = searchKey.isEmpty ? coinList : coinList.filter({
             $0.searchTerm.contains(searchKey)
         })
+        currentlyFiltering = false
     }
 }
 
@@ -58,6 +62,13 @@ extension HomeViewModel: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: CoinSimpleCell.reuseIdentifier) ?? UITableViewCell()
+        
+        if let currentCell = cell as? CoinSimpleCell {
+            let coin: CoinSimpleCellModel = filteredList[indexPath.row]
+            currentCell.configure(with: coin)
+        }
+        
+        return cell
     }
 }

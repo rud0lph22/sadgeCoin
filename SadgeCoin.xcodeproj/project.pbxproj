@@ -25,6 +25,7 @@
 		DD5952DC282E948D0007E33A /* PriceListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952DB282E948D0007E33A /* PriceListResponse.swift */; };
 		DD5952DF282EA8830007E33A /* KUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952DE282EA8830007E33A /* KUIViewController.swift */; };
 		DD5952E5282EAFEE0007E33A /* CoinSimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952E4282EAFEE0007E33A /* CoinSimpleCell.swift */; };
+		DD5952E7282EB20D0007E33A /* UITableViewCell+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5952E6282EB20D0007E33A /* UITableViewCell+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		DD5952DB282E948D0007E33A /* PriceListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListResponse.swift; sourceTree = "<group>"; };
 		DD5952DE282EA8830007E33A /* KUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUIViewController.swift; sourceTree = "<group>"; };
 		DD5952E4282EAFEE0007E33A /* CoinSimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSimpleCell.swift; sourceTree = "<group>"; };
+		DD5952E6282EB20D0007E33A /* UITableViewCell+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5952DE282EA8830007E33A /* KUIViewController.swift */,
+				DD5952E6282EB20D0007E33A /* UITableViewCell+extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				DD5952DF282EA8830007E33A /* KUIViewController.swift in Sources */,
 				DD5952D2282E89C40007E33A /* HomeViewModel.swift in Sources */,
 				DD5952E5282EAFEE0007E33A /* CoinSimpleCell.swift in Sources */,
+				DD5952E7282EB20D0007E33A /* UITableViewCell+extension.swift in Sources */,
 				DD59529A282E88A50007E33A /* AppDelegate.swift in Sources */,
 				DD5952D4282E89CC0007E33A /* ConViewModel.swift in Sources */,
 				DD59529C282E88A50007E33A /* SceneDelegate.swift in Sources */,
@@ -548,7 +552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -576,7 +580,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
