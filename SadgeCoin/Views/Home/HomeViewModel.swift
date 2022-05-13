@@ -54,6 +54,10 @@ class HomeViewModel: NSObject {
         })
         currentlyFiltering = false
     }
+    
+    func getCoin(forIndex index: Int) -> Coin {
+        return filteredList[index]
+    }
 }
 
 extension HomeViewModel: UITableViewDataSource {

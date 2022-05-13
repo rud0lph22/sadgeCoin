@@ -79,6 +79,14 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let coin = model.getCoin(forIndex: indexPath.row)
+        let controllerModel = CoinViewModel(with: coin)
+        let controller = CoinViewController(withModel: controllerModel)
+        self.modalPresentationStyle = .formSheet
+        self.present(controller, animated: true, completion: nil)
+    }
 }
 
 extension HomeViewController: UISearchBarDelegate {

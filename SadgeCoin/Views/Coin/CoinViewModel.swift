@@ -15,6 +15,10 @@ class CoinViewModel: NSObject {
     
     private var bag: Set<AnyCancellable> = Set<AnyCancellable>()
     
+    init(with coin: Coin) {
+        self.coin = coin
+    }
+    
     func fetchPrices() {
         guard let coin = coin,
               let id = coin.id else {
